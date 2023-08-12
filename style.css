@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2? familia = parisina & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Crimson+Text & display=swap');
+
+
+.carousel-indicators { height: 0%;}
+.carousel-inner { padding-top: 7%;
+padding-bottom: 0%;}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  rgb(255, 255, 255);
+    padding: 20px 20px;
+    color: rgb(26, 3, 3);
+  }
+  
+  .logo {
+    font-family: 'EB Garamond', serif;
+    font-size: 100px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    margin: 10px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: rgb(15, 1, 1);
+  }
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #3a0505;
+      z-index: 1;
+    }
+    .nav-list.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'parisina', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 7.7em;}
+h3{ font-size: 6.5em;}
+p{ font-size: 1.5em;
+font-family:'Crimson Text', serif; margin-top: 10px;}
+ul{ list-style: 4.em;}
+li{ font-size: 4.em;}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(142, 163, 255); 
+align-content: center;
+margin-top: 50%;
+margin-bottom: 50%;
+padding: auto;}
+
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 10px 10px;
+    font-weight: bold;
+    color: rgb(22, 4, 4);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(236, 236, 236);
+}
+
+#lorena-z .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-sabores{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+#nuestros-sabores22{
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 3, 3);
+    text-align: center;
+    font-family: 'EB Garamond', serif;}
+
+#nuestros-sabores22 .container{
+    padding: 100px 50px;
+}
+
+#nuestros-sabores22 h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 3.2em;
+}
+
+#nuestros-sabores22 p{
+    display: none;
+    font-family: 'Crimson Text', serif;
+}
+
+#nuestros-postres{
+    background-color: rgb(255, 255, 255);
+    color: rgb(29, 3, 3);
+    text-align: center;
+    font-family: 'EB Garamond', serif;}
+
+#nuestros-postres .container{
+    padding: 50px 50px;
+}
+
+#nuestros-postres h2{
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    font-size: 3.2em;
+}
+
+#nuestros-postres22 p{
+    display: none;
+}
+
+
+#nuestros-sabores .container{
+    padding: 10px 12px;
+}
+
+#nuestros-sabores h2{
+    margin-top: 100;
+    font-size: 3.2em;
+    align-content: first baseline;
+}
+
+#nuestros-sabores p{
+    display: none;
+}
+
+#nuestros-sabores .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/front-end.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/python.jpg");
+
+}
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(15, 2, 1);
+    color: rgb(255, 255, 255);
+    height: 80vh;
+}
+
+footer{
+    background-color: rgb(255, 255, 255);
+}
+
+footer p{
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #zay h1{
+        font-size: 5em;
+    }
+
+    #lorena-z .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #lorena-z.texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #lorena-z h2{
+        margin-top: 10px;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    #nuestros-sabores .sabores{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-sabores p{
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        text-align: start;
+    }
+
+    #nuestros-sabores h3{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+    }
+
+    #nuestros-sabores .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(27, 1, 1);
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/front-end-cropped.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/full-stack-cropped.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("media/python-cropped.jpg");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #buy h2{
+        font-size: 5em;
+    }
+
+    #buy button{
+        font-size: 2em;
+       margin-top: 2%;
+        color: rgb(0, 0, 0);
+        background-color: rgb(131, 118, 112);
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+.c-item {
+    height: 550px;
+  }
+  
+  .c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+  .circulo {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+  }
+
+  #contacto h2 {  margin-top: 10px;
+    margin-bottom: 100px;
+    font-family: 'EB Garamond', serif;
+    font-size: 250%;
+    text-align: center;}
+
